@@ -84,13 +84,79 @@
   transform: translateY(0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Auth forms styling */
+.auth-form, .profile-card {
+  background: var(--bg-secondary);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px 0 rgba(40, 44, 52, 0.08);
+  padding: 32px 24px 24px 24px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.auth-form h2,
+.profile-card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.auth-form input,
+.profile-card input {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fff;
+  color: #282c34;
+  box-sizing: border-box;
+}
+
+.auth-form .btn,
+.profile-card .btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 0;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.auth-form .btn:disabled {
+  background: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+.btn-link {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0;
+}
+
+.error {
+  background: #ffe2e2;
+  color: #e14a4a;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  text-align: left;
+}
+
+.profile-card {
+  text-align: left;
+  max-width: 350px;
 }
 
 /* Responsive design for mobile */
