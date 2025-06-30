@@ -31,7 +31,7 @@ export const authApi = {
    * @returns {Promise<{token: string, user: object}>}
    */
   async register(name, email, password) {
-    const res = await fetch(`${API_BASE}/users/register`, {
+    const res = await fetch(`${API_BASE}/auth/register`, {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ name, email, password }),
